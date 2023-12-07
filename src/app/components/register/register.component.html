@@ -1,21 +1,24 @@
+<div class="card">
+    <div class="card-header">
+      <h2>Cadastro</h2>
+    </div>
 <form [formGroup]="registerForm" (ngSubmit)="submitDetails()">
     <div>
       <div class="field">
-        <label for="fullName">FullName</label>
+        <label for="fullName">Nome completo</label>
         <input
           type="text"
           pInputText
           formControlName="fullName"
-          class="w-full"
           name="fullName"
-          placeholder="Type your name"
+          placeholder="Digite seu nome"
         />
         <small
           *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)"
           class="block p-error"
         >
-          <div *ngIf="fullName.errors?.['required']">Name is required.</div>
-          <div *ngIf="fullName.errors?.['pattern']">Enter a valid Name</div>
+          <div *ngIf="fullName.errors?.['required']" class="my-error">Nome é obrigatório.</div>
+          <div *ngIf="fullName.errors?.['pattern']" class="my-error">Nome inválido.</div>
         </small>
       </div>
       <div class="field">
@@ -24,44 +27,41 @@
           type="text"
           pInputText
           formControlName="email"
-          class="w-full"
           name="email"
-          placeholder="Type your email"
+          placeholder="usuario@exemplo.com"
         />
         <small
           *ngIf="email.invalid && (email.dirty || email.touched)"
           class="block p-error"
         >
-          <div *ngIf="email.errors?.['required']">Email is required.</div>
-          <div *ngIf="email.errors?.['email']">Email should be valid</div>
+          <div *ngIf="email.errors?.['required']" class="my-error">Email é obrigatório.</div>
+          <div *ngIf="email.errors?.['email']" class="my-error">Email inválido.</div>
         </small>
       </div>
       <div class="field">
-        <label for="password">Password</label>
+        <label for="password">Senha</label>
         <input
           type="password"
           pInputText
           formControlName="password"
-          class="w-full"
           name="password"
-          placeholder="Type your password"
+          placeholder="* * * * * * * * * *"
         />
         <small
           *ngIf="password.invalid && (password.dirty || password.touched)"
           class="block p-error"
         >
-          <div *ngIf="password.errors?.['required']">Password is required.</div>
+          <div *ngIf="password.errors?.['required']" class="my-error">Senha é obrigatório.</div>
         </small>
       </div>
       <div class="field">
-        <label for="confirmPassword">Confirm Password</label>
+        <label for="confirmPassword">Confirmar Senha</label>
         <input
           type="password"
           pInputText
           formControlName="confirmPassword"
-          class="w-full"
           name="confirmPassword"
-          placeholder="Confirm Password"
+          placeholder="* * * * * * * * * *"
         />
         <small
           *ngIf="
@@ -70,8 +70,8 @@
           "
           class="block p-error"
         >
-          <div *ngIf="confirmPassword.errors?.['required']">
-            Confirm the password
+          <div *ngIf="confirmPassword.errors?.['required']" class="my-error">
+            Confirme a senha
           </div>
         </small>
         <small
@@ -83,6 +83,7 @@
       </div>
       <button
         type="submit"
-      >Submit</button>
+      >Cadastrar</button>
     </div>
   </form>
+</div>

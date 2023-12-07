@@ -11,6 +11,18 @@
       "email": "shutney@gmail.com",
       "password": "123456",
       "id": 2
+    },
+    {
+      "fullName": "Dionizio",
+      "email": "santos@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "fullName": "Deus Rei",
+      "email": "jesus@fe.com",
+      "password": "777",
+      "id": 4
     }
   ]
 }
