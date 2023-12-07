@@ -26,9 +26,9 @@ import { CartComponent } from './pages/cart/cart.component';
 import { CartService } from './services/cart.service';
 import { StoreService } from './services/store.service';
 import { HttpClientModule } from '@angular/common/http';
-    
-    
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './components/register/register.component';
+   
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,7 +37,8 @@ import { HttpClientModule } from '@angular/common/http';
     ProductsHeaderComponent,
     FiltersComponent,
     ProductBoxComponent,
-    CartComponent
+    CartComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +56,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatTableModule,
     MatBadgeModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [CartService, StoreService], 
   bootstrap: [AppComponent]
