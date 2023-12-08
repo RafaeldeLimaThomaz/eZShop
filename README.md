@@ -4,6 +4,13 @@ Check this project in GhPages:
 
 https://rafaeldelimathomaz.github.io/eZShop/home
 
+![Alt Text](https://github.com/RafaeldeLimaThomaz/eZShop/blob/main/src/assets/1.png)
+
+![Alt Text](https://github.com/RafaeldeLimaThomaz/eZShop/blob/main/src/assets/2.png)
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
