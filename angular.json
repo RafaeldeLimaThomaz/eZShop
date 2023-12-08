@@ -105,6 +105,9 @@
           "options": {
             "browserTarget": "eZShop:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
