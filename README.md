@@ -4,7 +4,7 @@ This project implements a simple e-commerce platform, a web shop named eZShop. I
 
 Check this project in GhPages:
 
-https://rafaeldelimathomaz.github.io/eZShop/home
+https://rafaeldelimathomaz.github.io/eZShop/
 
 ![Alt Text](https://github.com/RafaeldeLimaThomaz/eZShop/blob/main/src/assets/1.png)
 
