@@ -89,38 +89,3 @@ Checklist
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> ID24: O aluno colaborou de maneira efetiva com outros membros do projeto, realizando fusões (merges) e resolução de conflitos de código de forma adequada e alinhada às práticas de desenvolvimento colaborativo.</li>
 <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> ID25: O aluno planejou, configurou e executou o processo de build da aplicação, preparando-a para produção e realizou o deploy em um ambiente de hospedagem, tornando-a prontamente acessível para uso.</li>
 </ul>
-<h2 tabindex="-1" dir="auto"><a id="user-content-manual-de-execução" class="anchor" aria-hidden="true" tabindex="-1" href="#manual-de-execução"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Manual de execução</h2>
-<ul dir="auto">
-<li>Clonar o repositório com <code>git clone</code></li>
-<li>Fazer checkout no branch <code>develop</code> que contém as modificações mais recentes</li>
-<li>Abrir o projeto no editor Visual Studio Code (VS Code)</li>
-<li>Abrir um terminal pelo VSCode ou qualquer terminal do seu Sistema Operacional apontando para o diretório raiz do projeto</li>
-<li>Instalar as dependências contidas no <code>package.json</code>
-<ul dir="auto">
-<li>Comando: <code>npm i</code></li>
-</ul>
-</li>
-<li>(Opcional) Instalar o JSON Server globalmente disponível em <code>https://www.npmjs.com/package/json-server</code>
-<ul dir="auto">
-<li>Comando: <code>npm i -g json-server</code></li>
-<li>É opcional porque a dependência já vem cadastrada no arquivo <code>package.json</code> para instalação local na pasta <code>node_modules</code></li>
-</ul>
-</li>
-<li>Executar a API Fake (JSON Server) via um dos seguintes comandos:
-<ul dir="auto">
-<li>Execução via script registrado no <code>package.json</code>: <code>npm run json:server:routes</code></li>
-<li>Ou via Execução explícita: <code>json-server --watch db.json --routes routes.json</code></li>
-</ul>
-</li>
-<li>O comando para execução do JSON Server deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo <code>db.json</code> e <code>routes.json</code>.
-<ul dir="auto">
-<li>Por padrão, a aplicação JSON Server executa no endereço <code>localhost:3000</code></li>
-</ul>
-</li>
-<li>Abrir um novo terminal pelo VSCode e então executar o projeto Angular
-<ul dir="auto">
-<li>Comando: <code>ng s -o</code></li>
-</ul>
-</li>
-</ul>
-<<pseudo>></<pseudo>>
