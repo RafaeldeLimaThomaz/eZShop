@@ -23,6 +23,12 @@
       "email": "jesus@fe.com",
       "password": "777",
       "id": 4
+    },
+    {
+      "fullName": "Rafael",
+      "email": "rafa@teste.com",
+      "password": "1234",
+      "id": 5
     }
   ]
 }
